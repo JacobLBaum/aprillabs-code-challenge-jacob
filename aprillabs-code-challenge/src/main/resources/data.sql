@@ -1,0 +1,18 @@
+DROP TABLE IF EXISTS listing;
+DROP TABLE IF EXISTS user;
+
+CREATE TABLE listing (
+  id INT AUTO_INCREMENT  PRIMARY KEY,
+  address VARCHAR(250) NOT NULL,
+  beds TINYINT,
+  baths TINYINT,
+  price DECIMAL(10,2)
+);
+
+CREATE TABLE user (
+  id INT AUTO_INCREMENT  PRIMARY KEY,
+  name VARCHAR(250) NOT NULL,
+  type VARCHAR(250),
+  age TINYINT,
+  numOfReferral TINYINT
+);
